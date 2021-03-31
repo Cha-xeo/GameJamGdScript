@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Pink Floyd - Us and Them.ogg-2125642e94a6da9210b03c22283fe0bb.oggstr"
+
+[deps]
+
+source_file="res://Assets/Pink Floyd - Us and Them.ogg"
+dest_files=[ "res://.import/Pink Floyd - Us and Them.ogg-2125642e94a6da9210b03c22283fe0bb.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

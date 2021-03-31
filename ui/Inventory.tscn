@@ -1,0 +1,164 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ui/inventorySlot.tscn" type="PackedScene" id=1]
+
+[node name="Inventory" type="Control"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.445435
+margin_top = -206.0
+margin_right = -0.445435
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 1644.02
+margin_top = 28.9246
+margin_right = 1941.02
+margin_bottom = 208.925
+columns = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="inventorySlot" parent="GridContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 64.0
+margin_bottom = 64.0
+
+[node name="TextureRect" parent="GridContainer/inventorySlot" index="0"]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 64.0
+margin_bottom = 64.0
+
+[node name="Amount" parent="GridContainer/inventorySlot/TextureRect" index="0"]
+text = "1"
+
+[node name="Polygon2D" type="Polygon2D" parent="GridContainer/inventorySlot"]
+position = Vector2( 50.0565, 43.3823 )
+color = Color( 1, 0.0117647, 0.0117647, 1 )
+polygon = PoolVector2Array( 13.4235, -23.7802, 31.3773, 7.71783, -1.69568, 8.03278 )
+
+[node name="inventorySlot2" parent="GridContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_right = 132.0
+margin_bottom = 64.0
+
+[node name="TextureRect" parent="GridContainer/inventorySlot2" index="0"]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 64.0
+margin_bottom = 64.0
+
+[node name="Amount" parent="GridContainer/inventorySlot2/TextureRect" index="0"]
+text = "2"
+
+[node name="Polygon2D2" type="Polygon2D" parent="GridContainer/inventorySlot2"]
+position = Vector2( 49.4659, 42.7148 )
+color = Color( 0, 0.0941176, 0.858824, 1 )
+polygon = PoolVector2Array( 13.4235, -23.7802, 31.3773, 7.71783, -1.69568, 8.03278 )
+
+[node name="inventorySlot3" parent="GridContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_right = 200.0
+margin_bottom = 64.0
+
+[node name="TextureRect" parent="GridContainer/inventorySlot3" index="0"]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 64.0
+margin_bottom = 64.0
+
+[node name="Amount" parent="GridContainer/inventorySlot3/TextureRect" index="0"]
+text = "3"
+
+[node name="Polygon2D3" type="Polygon2D" parent="GridContainer/inventorySlot3"]
+position = Vector2( 49.5427, 43.3823 )
+color = Color( 0.109804, 0.996078, 0.415686, 1 )
+polygon = PoolVector2Array( 13.4235, -23.7802, 31.3773, 7.71783, -1.69568, 8.03278 )
+
+[node name="inventorySlot4" parent="GridContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 68.0
+margin_right = 64.0
+margin_bottom = 132.0
+
+[node name="TextureRect" parent="GridContainer/inventorySlot4" index="0"]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 64.0
+margin_bottom = 64.0
+
+[node name="Amount" parent="GridContainer/inventorySlot4/TextureRect" index="0"]
+text = "4"
+
+[node name="Polygon2D4" type="Polygon2D" parent="GridContainer/inventorySlot4"]
+position = Vector2( 48.3879, 43.4592 )
+color = Color( 0.6, 0.0313726, 0.988235, 1 )
+polygon = PoolVector2Array( 13.4235, -23.7802, 31.3773, 7.71783, -1.69568, 8.03278 )
+
+[node name="inventorySlot5" parent="GridContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_top = 68.0
+margin_right = 132.0
+margin_bottom = 132.0
+
+[node name="TextureRect" parent="GridContainer/inventorySlot5" index="0"]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 64.0
+margin_bottom = 64.0
+
+[node name="Amount" parent="GridContainer/inventorySlot5/TextureRect" index="0"]
+text = "5"
+
+[node name="Polygon2D5" type="Polygon2D" parent="GridContainer/inventorySlot5"]
+position = Vector2( 49.1324, 42.458 )
+color = Color( 0.752941, 0.858824, 0, 1 )
+polygon = PoolVector2Array( 13.4235, -23.7802, 31.3773, 7.71783, -1.69568, 8.03278 )
+
+[node name="inventorySlot6" parent="GridContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 136.0
+margin_top = 68.0
+margin_right = 200.0
+margin_bottom = 132.0
+
+[node name="TextureRect" parent="GridContainer/inventorySlot6" index="0"]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 64.0
+margin_bottom = 64.0
+
+[node name="Amount" parent="GridContainer/inventorySlot6/TextureRect" index="0"]
+text = "6
+"
+
+[node name="Polygon2D6" type="Polygon2D" parent="GridContainer/inventorySlot6"]
+position = Vector2( 46.5392, 41.7905 )
+color = Color( 0, 0.756863, 0.858824, 1 )
+polygon = PoolVector2Array( 13.4235, -23.7802, 31.3773, 7.71783, -1.69568, 8.03278 )
+
+[editable path="GridContainer/inventorySlot"]
+
+[editable path="GridContainer/inventorySlot2"]
+
+[editable path="GridContainer/inventorySlot3"]
+
+[editable path="GridContainer/inventorySlot4"]
+
+[editable path="GridContainer/inventorySlot5"]
+
+[editable path="GridContainer/inventorySlot6"]

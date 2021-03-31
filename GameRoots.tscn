@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Pink Floyd - Us and Them.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Game.tscn" type="PackedScene" id=2]
+
+[node name="GameRoots" type="Node"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -20.0
+autoplay = true
+
+[node name="Game" parent="." instance=ExtResource( 2 )]

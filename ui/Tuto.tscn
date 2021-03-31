@@ -1,0 +1,68 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Script/Tuto.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 1 )
+
+[node name="Tuto" type="PanelContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 945.0
+margin_top = 461.0
+margin_right = 975.0
+margin_bottom = 619.0
+custom_constants/separation = 9
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 30.0
+margin_bottom = 14.0
+
+[node name="Label1" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 23.0
+margin_right = 30.0
+margin_bottom = 37.0
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 46.0
+margin_right = 30.0
+margin_bottom = 60.0
+
+[node name="Label3" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 69.0
+margin_right = 30.0
+margin_bottom = 83.0
+
+[node name="Label4" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 92.0
+margin_right = 30.0
+margin_bottom = 106.0
+
+[node name="Label5" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 115.0
+margin_right = 30.0
+margin_bottom = 129.0
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 138.0
+margin_right = 30.0
+margin_bottom = 158.0
+text = "Ok"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]

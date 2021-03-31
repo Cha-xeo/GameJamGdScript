@@ -1,0 +1,31 @@
+[gd_scene format=2]
+
+[node name="inventorySlot" type="CenterContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 928.0
+margin_top = 508.0
+margin_right = 992.0
+margin_bottom = 572.0
+rect_min_size = Vector2( 64, 64 )
+stretch_mode = 5
+
+[node name="Amount" type="Label" parent="TextureRect"]
+anchor_left = -0.0882616
+anchor_top = 0.0650339
+anchor_right = -0.0882616
+anchor_bottom = 0.0650339
+margin_left = 50.4815
+margin_top = 51.1259
+margin_right = 90.4815
+margin_bottom = 68.1259
+text = "100"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
